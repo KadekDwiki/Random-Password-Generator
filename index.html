@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>password generator</h1>
+      <div class="body-card">
+        <div class="password">
+          <input type="text" id="password" class="password-value" readonly />
+          <button class="btn-copy" id="copy"><i class="fas fa-clipboard" id="icon"></i></button>
+        </div>
+        <div class="settings">
+          <label for="length" class="text-settings"> password length</label>
+          <input type="number" class="number" id="length" value="6" min="1" max="100" />
+        </div>
+        <div class="settings">
+          <label for="uppercase" class="text-settings"> include uppercase</label>
+          <input type="checkbox" class="checkbox" id="uppercase" checked />
+        </div>
+        <div class="settings">
+          <label for="lowercase" class="text-settings"> include lowercase</label>
+          <input type="checkbox" class="checkbox" id="lowercase" />
+        </div>
+        <div class="settings">
+          <label for="numbers" class="text-settings"> include numbers</label>
+          <input type="checkbox" class="checkbox" id="number" />
+        </div>
+        <div class="settings">
+          <label for="symbols" class="text-settings"> include symbols</label>
+          <input type="checkbox" class="checkbox" id="symbol" />
+        </div>
+        <div class="settings">
+          <button class="btn-generate" id="generate">generate password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
